@@ -329,96 +329,16 @@
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script>
-        var sayac1 = 0;
-        function like1() {
-            sayac1++;
-            if (sayac1 % 2 == 1) {
-                document.querySelector("#like1").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like1").style.color = "#c4a6ef";
-            }
-        }
-        var sayac2 = 0;
-        function like2() {
-            sayac2++;
-            if (sayac2 % 2 == 1) {
-                document.querySelector("#like2").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like2").style.color = "#c4a6ef";
+        var like = document.querySelector("#content");
+        like.onclick = function (e) {
+            if (e.target.classList == "fa-solid fa-heart active") {
+                e.target.classList.remove("active");
+                e.target.style.color = "#c4a6ef"
+            } else {
+                e.target.classList.add("active");
+                e.target.style.color = "#03001C"
             }
         }
-        var sayac3 = 0;
-        function like3() {
-            sayac3++;
-            if (sayac3 % 2 == 1) {
-                document.querySelector("#like3").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like3").style.color = "#c4a6ef";
-            }
-        }
-        var sayac4 = 0;
-        function like4() {
-            sayac4++;
-            if (sayac4 % 2 == 1) {
-                document.querySelector("#like4").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like4").style.color = "#c4a6ef";
-            }
-        }
-        var sayac5 = 0;
-        function like5() {
-            sayac5++;
-            if (sayac5 % 2 == 1) {
-                document.querySelector("#like5").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like5").style.color = "#c4a6ef";
-            }
-        }
-        var sayac6 = 0;
-        function like6() {
-            sayac6++;
-            if (sayac6 % 2 == 1) {
-                document.querySelector("#like6").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like6").style.color = "#c4a6ef";
-            }
-        }
-        var sayac7 = 0;
-        function like7() {
-            sayac7++;
-            if (sayac7 % 2 == 1) {
-                document.querySelector("#like7").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like7").style.color = "#c4a6ef";
-            }
-        }
-        var sayac8 = 0;
-        function like8() {
-            sayac8++;
-            if (sayac8 % 2 == 1) {
-                document.querySelector("#like8").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like8").style.color = "#c4a6ef";
-            }
-        }
-        var sayac9 = 0;
-        function like9() {
-            sayac9++;
-            if (sayac9 % 2 == 1) {
-                document.querySelector("#like9").style.color = "#03001C";
-            }
-            else {
-                document.querySelector("#like9").style.color = "#c4a6ef";
-            }
-        } 
     </script>
 </body>
 
